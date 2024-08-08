@@ -1,0 +1,288 @@
+h1, h2, p, h3, button, h5, h4 {
+    font-family: 'Nunito';
+}
+
+header {
+    display: flex;
+}
+
+.small-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.gradient-header {
+    background: linear-gradient(to right, #F97FFF, #BBFCE4);
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+
+ul, li {
+    margin-top: 25px;
+}
+
+.nav .nav-link {
+    color: #2D4557;
+    font-family: 'Inter';
+}
+
+h3 {
+    color:#2D4557;
+}
+
+.banner1-container {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 51, 114, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text1 {
+    color: #ffffff;
+    text-align: left;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #bbfce4, #85c9ff); 
+    border: 1px solid rgba(111, 51, 114, 0.5) !important;
+}
+
+.btn-gradient:hover {
+    background: #F97FFF !important;
+    color: #FFFFFF !important;
+}
+
+.nav .nav-link {
+    color: #2D4557;
+    font-family: 'Inter';
+}
+
+.nav .custom-link:hover {
+    color: #FFFFFF !important;
+}
+
+footer {
+    background-color: #bbfce4;
+    text-align: center;
+    padding: 10px;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+    text-align: center;
+    color: #2D4557;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px auto;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+    margin-top: 70px;
+}
+
+.imgfloat {
+    max-width: 100%;
+    height: auto;
+    padding-left: 200px;
+}
+
+.aboutmep {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 0;
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #F97FFF; 
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+}
+
+
+.custom-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgba(111, 51, 114, 0.5);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(111, 51, 114, 0.5);
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.btn-gradient {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background-color: #1a3a5b;
+    transform: scale(1.1); 
+}
+
+.card-img-top {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+h1 {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: #2D4557; 
+    transform: translateY(-5px); 
+}
+
+.aboutmep:hover {
+    color: #1a3a5b; 
+    transform: scale(1.02); 
+}
+
+.social-icon {
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    color: #2D4557; 
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .aboutme-container {
+        margin-top: 30px;
+    }
+
+    .imgfloat {
+        margin: 5px auto;
+        max-width: 90%;
+    }
+
+    .aboutmep {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gradient-header {
+        padding: 5px;
+    }
+    
+
+    .small-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .about-me-container {
+        gap: 10px;
+    }
+
+    .imgfloat {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutmep {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+footer {
+    background-color: #bbfce4;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+}
